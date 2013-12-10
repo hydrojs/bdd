@@ -211,19 +211,7 @@ require.register("hydro-bdd/index.js", function(exports, require, module){
 module.exports = function(hydro) {
   hydro.set('proxies', 'describe', 'addSuite');
   hydro.set('proxies', 'it', 'addTest');
-}
-
-/**
- * Plugin title.
- */
-
-module.exports.title = 'hydro-bdd';
-
-/**
- * Plugin description.
- */
-
-module.exports.desc = 'BDD interface (describe, it)';
+};
 
 });
 require.alias("hydro-bdd/index.js", "hydro-bdd/index.js");if (typeof exports == "object") {
