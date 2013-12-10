@@ -19,9 +19,9 @@
     "coveralls": "~2.3.0",
     "istanbul": "~0.1.46",
     "component": "~0.18.0",
-    "hydro": "~0.7.1",
-    "simple-assert": "~1.0.0",
-    "hydro-simple": "~1.0.3"
+    "hydro": "*",
+    "simple-assert": "*",
+    "hydro-simple": "*"
   },
   "author": "Veselin Todorov <hi@vesln.com>",
   "license": "MIT"
