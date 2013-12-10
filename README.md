@@ -1,3 +1,8 @@
+[![NPM
+version](https://badge.fury.io/js/hydro-bdd.png)](http://badge.fury.io/js/hydro-bdd)
+[![Build Status](https://secure.travis-ci.org/hydrojs/hydro-bdd.png)](http://travis-ci.org/hydrojs/hydro-bdd)
+[![Coverage Status](https://coveralls.io/repos/hydrojs/hydro-bdd/badge.png?branch=master)](https://coveralls.io/r/hydrojs/hydro-bdd?branch=master)
+
 # hydro-bdd
 
 ## Synopsis
