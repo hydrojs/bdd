@@ -2,17 +2,36 @@ all: test
 
 # Make standalone browser build
 
-browser: node_modules components
+standalone: node_modules components
 	@./node_modules/.bin/component-build -s hydro-bdd -o .
 	@mv build.js hydro-bdd.js
 
-# Development
+# Make a new build
 
 build: components
 	@./node_modules/.bin/component-build --dev
 
-release: build browser test
+# Release
+
+release: clean node_modules build standalone test
 	@git changelog
+
+# Clean
+
+clean: clean-browser clean-components clean-cov
+
+clean-node:
+	@rm -rf node_modules
+
+clean-browser:
+	@rm -f hydro.js
+
+clean-components:
+	@rm -rf build
+	@rm -rf components
+
+clean-cov:
+	@rm -rf coverage
 
 # CI
 
@@ -28,4 +47,7 @@ coveralls:
 components: node_modules component.json
 	@./node_modules/.bin/component-install --dev
 
-.PHONY: all test coverage browser
+node_modules: clean-node
+	@npm install
+
+.PHONY: all test coverage standalone
