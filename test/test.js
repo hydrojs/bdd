@@ -1,6 +1,11 @@
 describe('foo', function() {
-  it('bar', function() {
-    assert(__hydro.runner.suites.length === 1);
-    assert(__hydro.runner.suites[0].tests.length === 1);
+  context('works', function() {
+    when('for real', function() {
+      it('bar', function() {
+        var suites = __hydro.suites();
+        assert(suites.length === 4, 'bad length: ' + suites.length);
+        assert(suites[3].tests.length === 1);
+      });
+    });
   });
 });
