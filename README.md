@@ -10,9 +10,13 @@ version](https://badge.fury.io/js/hydro-bdd.png)](http://badge.fury.io/js/hydro-
 BDD interface for [hydro](https://github.com/hydrojs/hydro)
 
 ```js
-describe('My module', function() {
-  it('it really works', function() {
+describe('hydro-bdd', function() {
+  context('working', function() {
+    when('works for real', function() {
+      it('really works', function() {
 
+      });
+    });
   });
 });
 ```
