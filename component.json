@@ -2,7 +2,7 @@
   "name": "hydro-bdd",
   "repo": "hydrojs/hydro-bdd",
   "description": "BDD interface for hydro",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "index.js",
   "scripts": [
