@@ -33,7 +33,7 @@ describe('foo', function() {
       }, 1);
     });
 
-    when('when', function() {
+    context('context 2', function() {
       beforeNext(function() {
         hooks.beforeNext++;
       });
